@@ -1,12 +1,15 @@
 package org.bitwisemadness.warframeprimeparts.database.model.requirements;
 
-import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
 
-@Entity
+@MappedSuperclass
 public abstract class BaseRequirement {
     @Id
     private String name;
+
+    public BaseRequirement() {
+    }
 
     public BaseRequirement(String name) {
         this.name = name;
