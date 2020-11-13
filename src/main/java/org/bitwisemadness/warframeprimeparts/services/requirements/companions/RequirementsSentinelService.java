@@ -3,10 +3,12 @@ package org.bitwisemadness.warframeprimeparts.services.requirements.companions;
 import org.bitwisemadness.warframeprimeparts.database.model.requirements.companions.RequirementsSentinel;
 import org.bitwisemadness.warframeprimeparts.database.repositories.requirements.companions.IRequirementsSentinelRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class RequirementsSentinelService implements IRequirementsSentinelService {
     @Autowired
     private IRequirementsSentinelRepository repository;
