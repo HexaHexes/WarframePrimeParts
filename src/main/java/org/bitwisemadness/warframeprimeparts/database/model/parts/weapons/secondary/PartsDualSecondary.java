@@ -1,16 +1,16 @@
 package org.bitwisemadness.warframeprimeparts.database.model.parts.weapons.secondary;
 
-import org.bitwisemadness.warframeprimeparts.database.model.parts.BaseAmounts;
-import org.bitwisemadness.warframeprimeparts.database.model.parts.BaseAmountsId;
+import org.bitwisemadness.warframeprimeparts.database.model.parts.BaseParts;
+import org.bitwisemadness.warframeprimeparts.database.model.parts.BasePartsId;
 import org.bitwisemadness.warframeprimeparts.database.model.requirements.weapons.secondary.RequirementsDualSecondary;
 
 import javax.persistence.ManyToOne;
 
-public class PartsDualSecondary extends BaseAmounts {
+public class PartsDualSecondary extends BaseParts {
     @ManyToOne
     private RequirementsDualSecondary baseRequirement;
 
-    public PartsDualSecondary(BaseAmountsId id, Boolean crafted) {
+    public PartsDualSecondary(BasePartsId id, Boolean crafted) {
         super(id, crafted);
     }
 

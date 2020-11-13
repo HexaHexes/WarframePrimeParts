@@ -1,11 +1,11 @@
 package org.bitwisemadness.warframeprimeparts.database.model.requirements.weapons.secondary;
 
-import org.bitwisemadness.warframeprimeparts.database.model.requirements.BaseRequirement;
+import org.bitwisemadness.warframeprimeparts.database.model.requirements.BaseRequirements;
 
 import javax.persistence.Entity;
 
 @Entity
-public class RequirementsDualSecondary extends BaseRequirement {
+public class RequirementsDualSecondary extends BaseRequirements {
     private Integer blueprintRequirement;
     private Integer linkRequirement;
     private Integer secondaryRequirement;

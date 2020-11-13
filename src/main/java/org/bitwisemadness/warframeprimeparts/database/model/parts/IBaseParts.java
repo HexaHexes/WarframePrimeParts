@@ -1,6 +1,6 @@
 package org.bitwisemadness.warframeprimeparts.database.model.parts;
 
-public interface IBaseAmounts {
+public interface IBaseParts {
     Boolean getCrafted();
 
     Boolean hasFullSet();

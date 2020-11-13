@@ -1,11 +1,11 @@
 package org.bitwisemadness.warframeprimeparts.database.model.requirements.weapons.melee;
 
-import org.bitwisemadness.warframeprimeparts.database.model.requirements.BaseRequirement;
+import org.bitwisemadness.warframeprimeparts.database.model.requirements.BaseRequirements;
 
 import javax.persistence.Entity;
 
 @Entity
-public class RequirementsSilvaAegis extends BaseRequirement {
+public class RequirementsSilvaAegis extends BaseRequirements {
     private Integer blueprintRequirement;
     private Integer bladeRequirement;
     private Integer guardRequirement;

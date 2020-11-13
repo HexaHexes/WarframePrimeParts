@@ -4,6 +4,9 @@ import org.bitwisemadness.warframeprimeparts.database.model.requirements.compani
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.Optional;
+
 @Repository
 public interface IRequirementsSentinelRepository extends JpaRepository<RequirementsSentinel, String> {
+    Optional<RequirementsSentinel> findByName(String name);
 }

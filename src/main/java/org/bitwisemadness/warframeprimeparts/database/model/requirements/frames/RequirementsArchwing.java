@@ -1,11 +1,11 @@
 package org.bitwisemadness.warframeprimeparts.database.model.requirements.frames;
 
-import org.bitwisemadness.warframeprimeparts.database.model.requirements.BaseRequirement;
+import org.bitwisemadness.warframeprimeparts.database.model.requirements.BaseRequirements;
 
 import javax.persistence.Entity;
 
 @Entity
-public class RequirementsArchwing extends BaseRequirement {
+public class RequirementsArchwing extends BaseRequirements {
     private Integer blueprintRequirement;
     private Integer harnessRequirement;
     private Integer systemsRequirement;

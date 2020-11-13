@@ -4,21 +4,24 @@ import javax.persistence.EmbeddedId;
 import javax.persistence.MappedSuperclass;
 
 @MappedSuperclass
-public abstract class BaseAmounts implements IBaseAmounts {
+public abstract class BaseParts implements IBaseParts {
     @EmbeddedId
-    private BaseAmountsId id;
+    private BasePartsId id;
     private Boolean crafted;
 
-    public BaseAmounts(BaseAmountsId id, Boolean crafted) {
+    public BaseParts() {
+    }
+
+    public BaseParts(BasePartsId id, Boolean crafted) {
         this.id = id;
         this.crafted = crafted;
     }
 
-    public BaseAmountsId getId() {
+    public BasePartsId getId() {
         return id;
     }
 
-    public void setId(BaseAmountsId id) {
+    public void setId(BasePartsId id) {
         this.id = id;
     }
 

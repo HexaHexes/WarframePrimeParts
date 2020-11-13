@@ -3,14 +3,14 @@ package org.bitwisemadness.warframeprimeparts.database.model.parts;
 import java.io.Serializable;
 import java.util.Objects;
 
-public class BaseAmountsId implements Serializable {
+public class BasePartsId implements Serializable {
     private String name;
     private String appUser;
 
-    public BaseAmountsId() {
+    public BasePartsId() {
     }
 
-    public BaseAmountsId(String name, String appUser) {
+    public BasePartsId(String name, String appUser) {
         this.name = name;
         this.appUser = appUser;
     }
@@ -34,8 +34,8 @@ public class BaseAmountsId implements Serializable {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof BaseAmountsId)) return false;
-        BaseAmountsId that = (BaseAmountsId) o;
+        if (!(o instanceof BasePartsId)) return false;
+        BasePartsId that = (BasePartsId) o;
         return name.equals(that.name) &&
                 appUser.equals(that.appUser);
     }

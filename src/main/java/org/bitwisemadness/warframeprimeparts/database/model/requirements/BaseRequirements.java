@@ -4,14 +4,14 @@ import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 
 @MappedSuperclass
-public abstract class BaseRequirement {
+public abstract class BaseRequirements {
     @Id
     private String name;
 
-    public BaseRequirement() {
+    public BaseRequirements() {
     }
 
-    public BaseRequirement(String name) {
+    public BaseRequirements(String name) {
         this.name = name;
     }
 

@@ -1,11 +1,11 @@
 package org.bitwisemadness.warframeprimeparts.database.model.requirements.weapons.secondary;
 
-import org.bitwisemadness.warframeprimeparts.database.model.requirements.BaseRequirement;
+import org.bitwisemadness.warframeprimeparts.database.model.requirements.BaseRequirements;
 
 import javax.persistence.Entity;
 
 @Entity
-public class RequirementsBallistica extends BaseRequirement {
+public class RequirementsBallistica extends BaseRequirements {
     private Integer blueprintRequirement;
     private Integer upperLimbRequirement;
     private Integer lowerLimbRequirement;

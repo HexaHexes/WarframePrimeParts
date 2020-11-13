@@ -1,16 +1,16 @@
 package org.bitwisemadness.warframeprimeparts.database.model.parts.weapons.melee;
 
-import org.bitwisemadness.warframeprimeparts.database.model.parts.BaseAmounts;
-import org.bitwisemadness.warframeprimeparts.database.model.parts.BaseAmountsId;
+import org.bitwisemadness.warframeprimeparts.database.model.parts.BaseParts;
+import org.bitwisemadness.warframeprimeparts.database.model.parts.BasePartsId;
 import org.bitwisemadness.warframeprimeparts.database.model.requirements.weapons.melee.RequirementsSilvaAegis;
 
 import javax.persistence.ManyToOne;
 
-public class PartsSilvaAegis extends BaseAmounts {
+public class PartsSilvaAegis extends BaseParts {
     @ManyToOne
     private RequirementsSilvaAegis baseRequirement;
 
-    public PartsSilvaAegis(BaseAmountsId id, Boolean crafted) {
+    public PartsSilvaAegis(BasePartsId id, Boolean crafted) {
         super(id, crafted);
     }
 

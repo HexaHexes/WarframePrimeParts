@@ -1,17 +1,17 @@
 package org.bitwisemadness.warframeprimeparts.database.model.parts.weapons.melee;
 
-import org.bitwisemadness.warframeprimeparts.database.model.parts.BaseAmounts;
-import org.bitwisemadness.warframeprimeparts.database.model.parts.BaseAmountsId;
+import org.bitwisemadness.warframeprimeparts.database.model.parts.BaseParts;
+import org.bitwisemadness.warframeprimeparts.database.model.parts.BasePartsId;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class PartsTipedo extends BaseAmounts {
+public class PartsTipedo extends BaseParts {
     @ManyToOne
     private PartsTipedo baseRequirement;
 
-    public PartsTipedo(BaseAmountsId id, Boolean crafted, PartsTipedo baseRequirement) {
+    public PartsTipedo(BasePartsId id, Boolean crafted, PartsTipedo baseRequirement) {
         super(id, crafted);
         this.baseRequirement = baseRequirement;
     }

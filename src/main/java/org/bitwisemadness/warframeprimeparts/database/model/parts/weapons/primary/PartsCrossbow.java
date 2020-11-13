@@ -1,16 +1,16 @@
 package org.bitwisemadness.warframeprimeparts.database.model.parts.weapons.primary;
 
-import org.bitwisemadness.warframeprimeparts.database.model.parts.BaseAmounts;
-import org.bitwisemadness.warframeprimeparts.database.model.parts.BaseAmountsId;
+import org.bitwisemadness.warframeprimeparts.database.model.parts.BaseParts;
+import org.bitwisemadness.warframeprimeparts.database.model.parts.BasePartsId;
 import org.bitwisemadness.warframeprimeparts.database.model.requirements.weapons.primary.RequirementsCrossbow;
 
 import javax.persistence.ManyToOne;
 
-public class PartsCrossbow extends BaseAmounts {
+public class PartsCrossbow extends BaseParts {
     @ManyToOne
     private RequirementsCrossbow baseRequirement;
 
-    public PartsCrossbow(BaseAmountsId id, Boolean crafted) {
+    public PartsCrossbow(BasePartsId id, Boolean crafted) {
         super(id, crafted);
     }
 

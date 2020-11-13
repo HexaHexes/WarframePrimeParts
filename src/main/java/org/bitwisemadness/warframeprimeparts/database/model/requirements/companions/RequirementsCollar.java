@@ -1,11 +1,13 @@
 package org.bitwisemadness.warframeprimeparts.database.model.requirements.companions;
 
-import org.bitwisemadness.warframeprimeparts.database.model.requirements.BaseRequirement;
+import org.bitwisemadness.warframeprimeparts.database.model.requirements.BaseRequirements;
 
 import javax.persistence.Entity;
+import javax.persistence.NamedQuery;
 
 @Entity
-public class RequirementsCollar extends BaseRequirement {
+@NamedQuery(name = "RequirementsCollar.findByName", query = "SELECT r FROM RequirementsCollar r WHERE r.name= :name")
+public class RequirementsCollar extends BaseRequirements {
     private Integer blueprintRequirement;
     private Integer bindRequirement;
     private Integer buckleRequirement;

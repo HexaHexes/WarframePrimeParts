@@ -1,24 +1,42 @@
 package org.bitwisemadness.warframeprimeparts.database.model.parts.companions;
 
-import org.bitwisemadness.warframeprimeparts.database.model.parts.BaseAmounts;
-import org.bitwisemadness.warframeprimeparts.database.model.parts.BaseAmountsId;
+import org.bitwisemadness.warframeprimeparts.database.model.AppUser;
+import org.bitwisemadness.warframeprimeparts.database.model.parts.BaseParts;
+import org.bitwisemadness.warframeprimeparts.database.model.parts.BasePartsId;
 import org.bitwisemadness.warframeprimeparts.database.model.requirements.companions.RequirementsCollar;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQuery;
 import java.util.Arrays;
 
 @Entity
-public class PartsCollar extends BaseAmounts {
+@NamedQuery(name = "PartsCollar.findByName", query = "SELECT r FROM PartsCollar r WHERE r.id.name= :name")
+@NamedQuery(name = "PartsCollar.findByNameByUser", query = "SELECT r FROM PartsCollar r WHERE r.id.name= :name AND r.id.appUser= :appUser")
+public class PartsCollar extends BaseParts {
     @ManyToOne
     private RequirementsCollar baseRequirement;
     private Integer blueprintAmount;
     private Integer bindAmount;
     private Integer buckleAmount;
 
-    public PartsCollar(BaseAmountsId id, Boolean crafted, RequirementsCollar baseRequirement, Integer blueprintAmount, Integer bindAmount, Integer buckleAmount) {
+    public PartsCollar() {
+    }
+
+    public PartsCollar(BasePartsId id, Boolean crafted, RequirementsCollar baseRequirement, Integer blueprintAmount, Integer bindAmount, Integer buckleAmount) {
         super(id, crafted);
         this.baseRequirement = baseRequirement;
+        this.blueprintAmount = blueprintAmount;
+        this.bindAmount = bindAmount;
+        this.buckleAmount = buckleAmount;
+    }
+
+    public PartsCollar(RequirementsCollar baseRequirement, AppUser appUser) {
+        this(baseRequirement, appUser, false, 0, 0, 0);
+    }
+
+    public PartsCollar(RequirementsCollar baseRequirement, AppUser appUser, Boolean crafted, Integer blueprintAmount, Integer bindAmount, Integer buckleAmount) {
+        super(new BasePartsId(baseRequirement.getName(), appUser.getName()), crafted);
         this.blueprintAmount = blueprintAmount;
         this.bindAmount = bindAmount;
         this.buckleAmount = buckleAmount;

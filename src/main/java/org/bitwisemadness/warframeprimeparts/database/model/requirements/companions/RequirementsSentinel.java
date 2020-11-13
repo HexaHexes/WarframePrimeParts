@@ -1,18 +1,19 @@
 package org.bitwisemadness.warframeprimeparts.database.model.requirements.companions;
 
-import org.bitwisemadness.warframeprimeparts.database.model.requirements.BaseRequirement;
+import org.bitwisemadness.warframeprimeparts.database.model.requirements.BaseRequirements;
 
 import javax.persistence.Entity;
+import javax.persistence.NamedQuery;
 
 @Entity
-public class RequirementsSentinel extends BaseRequirement {
+@NamedQuery(name = "RequirementsSentinel.findByName", query = "SELECT r FROM RequirementsSentinel r WHERE r.name= :name")
+public class RequirementsSentinel extends BaseRequirements {
     private Integer blueprintRequirement;
     private Integer carapaceRequirement;
     private Integer cerebrumRequirement;
     private Integer systemsRequirement;
 
-    public RequirementsSentinel(String name) {
-        super(name);
+    public RequirementsSentinel() {
     }
 
     public RequirementsSentinel(String name, Integer blueprintRequirement, Integer carapaceRequirement, Integer cerebrumRequirement, Integer systemsRequirement) {
