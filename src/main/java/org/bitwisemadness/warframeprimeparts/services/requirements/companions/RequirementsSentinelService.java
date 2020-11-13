@@ -31,6 +31,11 @@ public class RequirementsSentinelService implements IRequirementsSentinelService
     }
 
     @Override
+    public void putAll(List<RequirementsSentinel> requirements) {
+        requirements.forEach(this::put);
+    }
+
+    @Override
     public void delete(String name) {
         Optional<RequirementsSentinel> optional = this.repository.findByName(name);
         optional.ifPresent(collar -> this.repository.delete(collar));

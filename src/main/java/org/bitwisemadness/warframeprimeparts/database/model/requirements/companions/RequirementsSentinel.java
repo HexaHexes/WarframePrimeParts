@@ -16,14 +16,6 @@ public class RequirementsSentinel extends BaseRequirements {
     public RequirementsSentinel() {
     }
 
-    public RequirementsSentinel(String name, Integer blueprintRequirement, Integer carapaceRequirement, Integer cerebrumRequirement, Integer systemsRequirement) {
-        super(name);
-        this.blueprintRequirement = blueprintRequirement;
-        this.carapaceRequirement = carapaceRequirement;
-        this.cerebrumRequirement = cerebrumRequirement;
-        this.systemsRequirement = systemsRequirement;
-    }
-
     public Integer getBlueprintRequirement() {
         return blueprintRequirement;
     }

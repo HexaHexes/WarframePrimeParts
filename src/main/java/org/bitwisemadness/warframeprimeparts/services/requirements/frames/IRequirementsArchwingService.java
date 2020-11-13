@@ -11,5 +11,7 @@ public interface IRequirementsArchwingService {
 
     void put (RequirementsArchwing requirements);
 
+    void putAll (List<RequirementsArchwing> requirements);
+
     void delete(String name);
 }

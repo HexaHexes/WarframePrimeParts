@@ -31,6 +31,11 @@ public class RequirementsCollarService implements IRequirementsCollarService {
     }
 
     @Override
+    public void putAll(List<RequirementsCollar> requirements) {
+        requirements.forEach(this::put);
+    }
+
+    @Override
     public void delete(String name) {
         Optional<RequirementsCollar> optional = this.repository.findByName(name);
         optional.ifPresent(collar -> this.repository.delete(collar));

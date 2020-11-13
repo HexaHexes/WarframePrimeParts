@@ -14,14 +14,6 @@ public class RequirementsPrimary extends BaseRequirements {
     public RequirementsPrimary() {
     }
 
-    public RequirementsPrimary(String name, Integer blueprintRequirement, Integer barrelRequirement, Integer receiverRequirement, Integer stockRequirement) {
-        super(name);
-        this.blueprintRequirement = blueprintRequirement;
-        this.barrelRequirement = barrelRequirement;
-        this.receiverRequirement = receiverRequirement;
-        this.stockRequirement = stockRequirement;
-    }
-
     public Integer getBlueprintRequirement() {
         return blueprintRequirement;
     }

@@ -11,5 +11,7 @@ public interface IRequirementsCrossbowService {
 
     void put (RequirementsCrossbow requirements);
 
+    void putAll (List<RequirementsCrossbow> requirements);
+
     void delete(String name);
 }

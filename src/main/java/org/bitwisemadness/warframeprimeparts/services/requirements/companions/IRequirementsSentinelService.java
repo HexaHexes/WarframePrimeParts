@@ -11,5 +11,7 @@ public interface IRequirementsSentinelService {
 
     void put (RequirementsSentinel requirements);
 
+    void putAll (List<RequirementsSentinel> requirements);
+
     void delete(String name);
 }

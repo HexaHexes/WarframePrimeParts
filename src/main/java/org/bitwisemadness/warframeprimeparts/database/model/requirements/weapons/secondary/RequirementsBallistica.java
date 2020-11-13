@@ -15,15 +15,6 @@ public class RequirementsBallistica extends BaseRequirements {
     public RequirementsBallistica() {
     }
 
-    public RequirementsBallistica(String name, Integer blueprintRequirement, Integer upperLimbRequirement, Integer lowerLimbRequirement, Integer stringRequirement, Integer receiverRequirement) {
-        super(name);
-        this.blueprintRequirement = blueprintRequirement;
-        this.upperLimbRequirement = upperLimbRequirement;
-        this.lowerLimbRequirement = lowerLimbRequirement;
-        this.stringRequirement = stringRequirement;
-        this.receiverRequirement = receiverRequirement;
-    }
-
     public Integer getBlueprintRequirement() {
         return blueprintRequirement;
     }

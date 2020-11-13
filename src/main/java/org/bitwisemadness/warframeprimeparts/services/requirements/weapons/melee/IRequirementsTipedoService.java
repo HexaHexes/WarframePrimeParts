@@ -11,5 +11,7 @@ public interface IRequirementsTipedoService {
 
     void put (RequirementsTipedo requirements);
 
+    void putAll (List<RequirementsTipedo> requirements);
+
     void delete(String name);
 }

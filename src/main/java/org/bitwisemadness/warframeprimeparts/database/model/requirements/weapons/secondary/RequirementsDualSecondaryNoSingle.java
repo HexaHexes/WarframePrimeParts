@@ -14,14 +14,6 @@ public class RequirementsDualSecondaryNoSingle extends BaseRequirements {
     public RequirementsDualSecondaryNoSingle() {
     }
 
-    public RequirementsDualSecondaryNoSingle(String name, Integer blueprintRequirement, Integer linkRequirement, Integer receiverRequirement, Integer barrelRequirement) {
-        super(name);
-        this.blueprintRequirement = blueprintRequirement;
-        this.linkRequirement = linkRequirement;
-        this.receiverRequirement = receiverRequirement;
-        this.barrelRequirement = barrelRequirement;
-    }
-
     public Integer getBlueprintRequirement() {
         return blueprintRequirement;
     }

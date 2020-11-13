@@ -15,13 +15,6 @@ public class RequirementsCollar extends BaseRequirements {
     public RequirementsCollar() {
     }
 
-    public RequirementsCollar(String name, Integer blueprintRequirement, Integer bindRequirement, Integer buckleRequirement) {
-        super(name);
-        this.blueprintRequirement = blueprintRequirement;
-        this.bindRequirement = bindRequirement;
-        this.buckleRequirement = buckleRequirement;
-    }
-
     public Integer getBlueprintRequirement() {
         return blueprintRequirement;
     }

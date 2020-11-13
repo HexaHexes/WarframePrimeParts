@@ -15,15 +15,6 @@ public class RequirementsCrossbow extends BaseRequirements {
     public RequirementsCrossbow() {
     }
 
-    public RequirementsCrossbow(String name, Integer blueprintRequirement, Integer barrelRequirement, Integer receiverRequirement, Integer stringRequirement, Integer gripRequirement) {
-        super(name);
-        this.blueprintRequirement = blueprintRequirement;
-        this.barrelRequirement = barrelRequirement;
-        this.receiverRequirement = receiverRequirement;
-        this.stringRequirement = stringRequirement;
-        this.gripRequirement = gripRequirement;
-    }
-
     public Integer getBlueprintRequirement() {
         return blueprintRequirement;
     }

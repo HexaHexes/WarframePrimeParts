@@ -14,14 +14,6 @@ public class RequirementsWarframe extends BaseRequirements {
     public RequirementsWarframe() {
     }
 
-    public RequirementsWarframe(String name, Integer blueprintRequirement, Integer chassisRequirement, Integer neuropticsRequirement, Integer systemsRequirement) {
-        super(name);
-        this.blueprintRequirement = blueprintRequirement;
-        this.chassisRequirement = chassisRequirement;
-        this.neuropticsRequirement = neuropticsRequirement;
-        this.systemsRequirement = systemsRequirement;
-    }
-
     public Integer getBlueprintRequirement() {
         return blueprintRequirement;
     }

@@ -1,6 +1,6 @@
-package org.bitwisemadness.warframeprimeparts.services;
+package org.bitwisemadness.warframeprimeparts.services.users;
 
-import org.bitwisemadness.warframeprimeparts.database.model.AppUser;
+import org.bitwisemadness.warframeprimeparts.database.model.users.AppUser;
 
 import java.util.List;
 

@@ -13,13 +13,6 @@ public class RequirementsTipedo extends BaseRequirements {
     public RequirementsTipedo() {
     }
 
-    public RequirementsTipedo(String name, Integer blueprintRequirement, Integer handleRequirement, Integer ornamentRequirement) {
-        super(name);
-        this.blueprintRequirement = blueprintRequirement;
-        this.handleRequirement = handleRequirement;
-        this.ornamentRequirement = ornamentRequirement;
-    }
-
     public Integer getBlueprintRequirement() {
         return blueprintRequirement;
     }

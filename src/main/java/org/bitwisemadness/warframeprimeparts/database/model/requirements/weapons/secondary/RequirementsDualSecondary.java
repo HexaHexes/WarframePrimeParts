@@ -13,13 +13,6 @@ public class RequirementsDualSecondary extends BaseRequirements {
     public RequirementsDualSecondary() {
     }
 
-    public RequirementsDualSecondary(String name, Integer blueprintRequirement, Integer linkRequirement, Integer secondaryRequirement) {
-        super(name);
-        this.blueprintRequirement = blueprintRequirement;
-        this.linkRequirement = linkRequirement;
-        this.secondaryRequirement = secondaryRequirement;
-    }
-
     public Integer getBlueprintRequirement() {
         return blueprintRequirement;
     }

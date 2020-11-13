@@ -1,6 +1,6 @@
-package org.bitwisemadness.warframeprimeparts.services;
+package org.bitwisemadness.warframeprimeparts.services.users;
 
-import org.bitwisemadness.warframeprimeparts.database.model.AppUser;
+import org.bitwisemadness.warframeprimeparts.database.model.users.AppUser;
 import org.bitwisemadness.warframeprimeparts.database.repositories.IAppUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

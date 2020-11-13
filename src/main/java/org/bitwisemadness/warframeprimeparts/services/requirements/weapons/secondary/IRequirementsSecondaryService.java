@@ -11,5 +11,7 @@ public interface IRequirementsSecondaryService {
 
     void put (RequirementsSecondary requirements);
 
+    void putAll (List<RequirementsSecondary> requirements);
+
     void delete(String name);
 }

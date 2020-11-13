@@ -13,7 +13,6 @@ public class PartsCollarService implements IPartsCollarService {
     @Autowired
     private IPartsCollarRepository repository;
 
-
     @Override
     public List<PartsCollar> findAll() {
         return this.repository.findAll();

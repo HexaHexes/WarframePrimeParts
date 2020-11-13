@@ -11,5 +11,7 @@ public interface IRequirementsBowService {
 
     void put (RequirementsBow requirements);
 
+    void putAll (List<RequirementsBow> requirements);
+
     void delete(String name);
 }

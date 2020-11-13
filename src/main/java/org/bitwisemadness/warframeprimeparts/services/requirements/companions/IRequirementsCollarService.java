@@ -11,5 +11,7 @@ public interface IRequirementsCollarService {
 
     void put (RequirementsCollar requirements);
 
+    void putAll (List<RequirementsCollar> requirements);
+
     void delete(String name);
 }

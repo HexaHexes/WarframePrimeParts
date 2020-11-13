@@ -11,5 +11,7 @@ public interface IRequirementsPrimaryService {
 
     void put (RequirementsPrimary requirements);
 
+    void putAll (List<RequirementsPrimary> requirements);
+
     void delete(String name);
 }

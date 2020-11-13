@@ -13,13 +13,6 @@ public class RequirementsMelee extends BaseRequirements {
     public RequirementsMelee() {
     }
 
-    public RequirementsMelee(String name, Integer blueprintRequirement, Integer bladeRequirement, Integer handleRequirement) {
-        super(name);
-        this.blueprintRequirement = blueprintRequirement;
-        this.bladeRequirement = bladeRequirement;
-        this.handleRequirement = handleRequirement;
-    }
-
     public Integer getBlueprintRequirement() {
         return blueprintRequirement;
     }

@@ -11,5 +11,7 @@ public interface IRequirementsDualSecondaryNoSingleService {
 
     void put (RequirementsDualSecondaryNoSingle requirements);
 
+    void putAll (List<RequirementsDualSecondaryNoSingle> requirements);
+
     void delete(String name);
 }

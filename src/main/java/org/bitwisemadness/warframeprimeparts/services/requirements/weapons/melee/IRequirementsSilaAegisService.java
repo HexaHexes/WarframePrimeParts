@@ -11,5 +11,7 @@ public interface IRequirementsSilaAegisService {
 
     void put (RequirementsSilvaAegis requirements);
 
+    void putAll (List<RequirementsSilvaAegis> requirements);
+
     void delete(String name);
 }

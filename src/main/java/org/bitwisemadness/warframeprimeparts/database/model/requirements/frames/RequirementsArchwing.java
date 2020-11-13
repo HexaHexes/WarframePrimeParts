@@ -14,14 +14,6 @@ public class RequirementsArchwing extends BaseRequirements {
     public RequirementsArchwing() {
     }
 
-    public RequirementsArchwing(String name, Integer blueprintRequirement, Integer harnessRequirement, Integer systemsRequirement, Integer wingsRequirement) {
-        super(name);
-        this.blueprintRequirement = blueprintRequirement;
-        this.harnessRequirement = harnessRequirement;
-        this.systemsRequirement = systemsRequirement;
-        this.wingsRequirement = wingsRequirement;
-    }
-
     public Integer getBlueprintRequirement() {
         return blueprintRequirement;
     }

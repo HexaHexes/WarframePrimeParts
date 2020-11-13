@@ -15,15 +15,6 @@ public class RequirementsBow extends BaseRequirements {
     public RequirementsBow() {
     }
 
-    public RequirementsBow(String name, Integer blueprintRequirement, Integer upperLimbRequirement, Integer lowerLimbRequirement, Integer stringRequirement, Integer gripRequirement) {
-        super(name);
-        this.blueprintRequirement = blueprintRequirement;
-        this.upperLimbRequirement = upperLimbRequirement;
-        this.lowerLimbRequirement = lowerLimbRequirement;
-        this.stringRequirement = stringRequirement;
-        this.gripRequirement = gripRequirement;
-    }
-
     public Integer getBlueprintRequirement() {
         return blueprintRequirement;
     }

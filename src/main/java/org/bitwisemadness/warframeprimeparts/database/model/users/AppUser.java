@@ -1,4 +1,4 @@
-package org.bitwisemadness.warframeprimeparts.database.model;
+package org.bitwisemadness.warframeprimeparts.database.model.users;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

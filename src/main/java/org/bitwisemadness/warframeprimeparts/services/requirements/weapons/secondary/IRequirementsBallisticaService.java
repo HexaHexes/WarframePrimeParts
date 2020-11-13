@@ -11,5 +11,7 @@ public interface IRequirementsBallisticaService {
 
     void put (RequirementsBallistica requirements);
 
+    void putAll (List<RequirementsBallistica> requirements);
+
     void delete(String name);
 }

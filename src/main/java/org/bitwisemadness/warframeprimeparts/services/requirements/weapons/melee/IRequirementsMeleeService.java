@@ -11,5 +11,7 @@ public interface IRequirementsMeleeService {
 
     void put (RequirementsMelee requirements);
 
+    void putAll (List<RequirementsMelee> requirements);
+
     void delete(String name);
 }

@@ -1,9 +1,8 @@
-package org.bitwisemadness.warframeprimeparts.rest;
+package org.bitwisemadness.warframeprimeparts.rest.users;
 
 import com.sun.istack.NotNull;
-import org.bitwisemadness.warframeprimeparts.database.model.AppUser;
-import org.bitwisemadness.warframeprimeparts.database.model.requirements.companions.RequirementsCollar;
-import org.bitwisemadness.warframeprimeparts.services.IAppUserService;
+import org.bitwisemadness.warframeprimeparts.database.model.users.AppUser;
+import org.bitwisemadness.warframeprimeparts.services.users.IAppUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;

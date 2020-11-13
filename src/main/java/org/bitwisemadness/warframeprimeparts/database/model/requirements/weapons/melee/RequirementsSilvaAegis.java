@@ -14,14 +14,6 @@ public class RequirementsSilvaAegis extends BaseRequirements {
     public RequirementsSilvaAegis() {
     }
 
-    public RequirementsSilvaAegis(String name, Integer blueprintRequirement, Integer bladeRequirement, Integer guardRequirement, Integer hiltRequirement) {
-        super(name);
-        this.blueprintRequirement = blueprintRequirement;
-        this.bladeRequirement = bladeRequirement;
-        this.guardRequirement = guardRequirement;
-        this.hiltRequirement = hiltRequirement;
-    }
-
     public Integer getBlueprintRequirement() {
         return blueprintRequirement;
     }

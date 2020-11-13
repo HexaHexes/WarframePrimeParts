@@ -4,7 +4,7 @@ import javax.persistence.EmbeddedId;
 import javax.persistence.MappedSuperclass;
 
 @MappedSuperclass
-public abstract class BaseParts implements IBaseParts {
+public abstract class BaseParts {
     @EmbeddedId
     private BasePartsId id;
     private Boolean crafted;

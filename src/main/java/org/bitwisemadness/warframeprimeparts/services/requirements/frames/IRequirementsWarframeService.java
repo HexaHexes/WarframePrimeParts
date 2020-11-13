@@ -11,5 +11,7 @@ public interface IRequirementsWarframeService {
 
     void put (RequirementsWarframe requirements);
 
+    void putAll (List<RequirementsWarframe> requirements);
+
     void delete(String name);
 }
